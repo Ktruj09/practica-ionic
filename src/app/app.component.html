@@ -1,3 +1,70 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content>
+
+      <div class="menu-header-bg"></div>
+
+      <!--contenedor de la imagen y descripcion personaje-->
+      <div class="header-content">
+        <img
+          src="https://previews.123rf.com/images/pikepicture/pikepicture1710/pikepicture171000201/87928812-programador-man-vector-programador-profesional-cl%C3%A1sico-codificaci%C3%B3n-hombre-software-programmer-typing-cod.jpg"
+          alt="Photo">
+        <ion-label>
+          <h2>Francisco Javier</h2>
+          <p>Desarrollador</p>
+        </ion-label>
+      </div>
+      <!--contenedor de la imagen y descripcion personaje-->
+
+      <!--Contenedor de botones Seguir, seguidores-->
+      <div class="action-button">
+        <ion-button>
+          <ion-icon name="create-outline"></ion-icon>
+          
+        </ion-button>
+
+        <ion-button>
+          <ion-icon name="people-outline"></ion-icon>
+          Seguidores
+        </ion-button>
+      </div>
+
+
+      <!--Contenedor LIsta -->
+      <ion-lis class="menu-items" lines="none">
+
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Tablero
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="browsers-outline"></ion-icon>Publicaciones
+        </ion-item>
+
+        <ion-item class="active">
+          <ion-icon name="flash"></ion-icon>Sesion envivo
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>Mensajes
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="heart-outline"></ion-icon>Libreria
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="exit-outline"></ion-icon>Cerrar Sesión
+    </ion-item>
+      </ion-lis>
+
+
+    </ion-content>
+  </ion-menu>
+
+
+
+
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
